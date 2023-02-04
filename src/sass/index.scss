@@ -1,4 +1,7 @@
+// підключення базових стилів, шрифтів та змінних
 @import './basic';
+@import './fonts';
 @import './variables';
-@import './header';
 
+// підключення стилів секцій
+@import './header';
