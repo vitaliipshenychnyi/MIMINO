@@ -1,0 +1,10 @@
+// стилізація елементів списку посилань на соціальні мережі
+.social-icon {
+  fill: $color-text-btn;
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: $fonts-color-c79002;
+  }
+}

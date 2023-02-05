@@ -5,9 +5,9 @@ $font-logo: 'FilmP3', sans-serif;
 
 // фонові кольори
 $main-background: #fffdee;
+$footer-background: #0e0c07;
 // $secondary-background: #f0ecd6;
 // $header-background: rgba(0, 0, 0, 0.65);
-// $footer-background: #0e0c07;
 
 // Кольри для компонентів кнопок
 $color-btn: rgba(0, 0, 0, 0.4);
@@ -26,13 +26,7 @@ $fonts-color-f3c653: #f3c653;
 // $maps-text-color: #e5e5e5;
 // $text-color-gray: #808080;
 
-:root {
   // напівпрозорі фони для секцій
   $home-hero-background: rgba(0, 0, 0, 0.65);
   $restaurant-background: rgba(0, 0, 0, 0.76);
   $hotel-background: rgba(0, 0, 0, 0.7);
-
-  // Кольри для компонентів кнопок
-  $color-btn: rgba(0, 0, 0, 0.4);
-  $color-text-btn: #f3c653;
-}
