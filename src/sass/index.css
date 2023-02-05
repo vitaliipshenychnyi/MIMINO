@@ -1,0 +1,255 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.header__phone, .header__nav-link, .header__logo {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "FilmP3";
+  src: url("../fonts/FilmP3-Bold-700.woff"), url("../fonts/FilmP3-Bold-700.ttf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light-300.woff"), url("../fonts/Montserrat-Light-300.ttf");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular-400.woff"), url("../fonts/Montserrat-Regular-400.ttf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium-500.woff"), url("../fonts/Montserrat-Medium-500.ttf");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold-600.woff"), url("../fonts/Montserrat-SemiBold-600.ttf");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold-700.ttf"), url("../fonts/Montserrat-Bold-700.ttf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TimesNewRoman";
+  src: url("../fonts/TimesNewRoman-Regular-400.woff"), url("../fonts/TimesNewRoman-Regular-400.ttf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TimesNewRoman";
+  src: url("../fonts/TimesNewRoman-Bold-700.woff"), url("../fonts/TimesNewRoman-Bold-700.ttf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fffdee;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hiden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid red;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  -webkit-backdrop-filter: blur(0.8px);
+          backdrop-filter: blur(0.8px);
+  background: linear-gradient(180deg, #000000 10%, rgba(0, 0, 0, 0.55) 70.3%, rgba(0, 0, 0, 0) 100%);
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .header__wrapper {
+    padding-top: 24px;
+    padding-bottom: 33px;
+  }
+}
+
+.header__logo {
+  font-family: "FilmP3", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.0833333333;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  padding-right: 0;
+  margin-right: 0;
+}
+@media screen and (min-width: 1024px) {
+  .header__logo {
+    font-size: 40px;
+    line-height: 1.075;
+  }
+}
+
+.header__nav {
+  margin-left: auto;
+}
+@media screen and (min-width: 1280px) {
+  .header__nav {
+    margin-right: auto;
+  }
+}
+
+.header__nav-list {
+  display: flex;
+}
+.header__nav-list .header__nav-item {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 371px) {
+  .header__nav-list .header__nav-item:first-child {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__nav-list .header__nav-item:first-child {
+    margin-right: 72px;
+  }
+}
+
+.header__nav-link {
+  margin-right: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1024px) {
+  .header__nav-link {
+    margin-right: 32px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+.header__nav-link:hover, .header__nav-link:focus, .header__nav-link:active {
+  color: #c79002;
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  fill: #f3c653;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1024px) {
+  .header__phone {
+    padding: 8px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header__phone .phone-number {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__phone .phone-number {
+    margin-left: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2142857143;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.nav__phone:hover,
+.nav__phone:focus,
+.nav__phone:active {
+  fill: var(--style-text-color);
+  border-color: var(--style-text-color);
+}
+
+.nav__phone:hover span,
+.nav__phone:focus span,
+.nav__phone:active span {
+  color: var(--footer-allelement-color);
+}/*# sourceMappingURL=index.css.map */

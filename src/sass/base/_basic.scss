@@ -1,0 +1,59 @@
+body {
+  font-family: $font-main;
+  background-color: $main-background;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+// базові параметри зображень
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// приховування тексту
+.hiden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// ПІДКЛЮЧЕННЯ ІКОНОК:
+// геолокація
+// #location-pin
+
+// телефон
+// #phone
+
+// сціальні мережі
+// #twitter
+// #facebook
+// #instagram
+
+// стрілочки
+// #arrow-right
+// #arrow-left
+// #arrow-down

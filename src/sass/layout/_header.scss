@@ -1,0 +1,190 @@
+// позиціонування header
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+
+  backdrop-filter: blur(0.8px);
+  background: linear-gradient(
+    180deg,
+    #000000 10%,
+    rgba(0, 0, 0, 0.55) 70.3%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 1024px) {
+      padding-top: 24px;
+      padding-bottom: 33px;
+    }
+  }
+}
+
+// стилізація логотипу
+.header__logo {
+  @extend %link;
+
+  font-family: $font-logo;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(39 / 36);
+  letter-spacing: 0.3em;
+  color: $fonts-color-ffffff;
+  padding-right: 0;
+  margin-right: 0;
+
+  transition: color $transition-fast;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+    line-height: calc(43 / 40);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $fonts-color-f3c653;
+  }
+}
+
+// центрування навігаційного блоку
+.header__nav {
+  margin-left: auto;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: auto;
+  }
+}
+
+// позиціонування навігаційного блоку
+.header__nav-list {
+  display: flex;
+
+  @media screen and (max-width: 370px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .header__nav-item {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 370px) {
+      &:first-child {
+        margin-bottom: 8px;
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (min-width: 371px) {
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      &:first-child {
+        margin-right: 72px;
+      }
+    }
+  }
+}
+
+// стилізація елементів навігаційного блоку
+.header__nav-link {
+  @extend %link;
+
+  margin-right: 6px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: $color-text-btn;
+
+  transition: color $transition-fast;
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 32px;
+
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $fonts-color-c79002;
+  }
+}
+
+.header__phone {
+  @extend %link;
+
+  display: flex;
+  align-items: center;
+  padding: 0;
+  fill: $color-text-btn;
+
+  transition: fill $transition-fast, border-color $transition-fast;
+
+  @media screen and (min-width: 1024px) {
+    padding: 8px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .phone-number {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .phone-number {
+      margin-left: 8px;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(17 / 14);
+      align-items: center;
+      letter-spacing: 0.02em;
+      color: $fonts-color-ffffff;
+
+      transition: color $transition-fast;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: $fonts-color-c79002;
+    border-color: $fonts-color-c79002;
+  }
+
+  &:hover .phone-number,
+  &:focus .phone-number,
+  &:active .phone-number {
+    color: $fonts-color-f3c653;
+  }
+}
+
+// позиціонування списку посилань на соціальні мережі
+.header__social-list {
+  @extend %list;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}

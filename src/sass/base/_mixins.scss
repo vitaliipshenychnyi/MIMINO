@@ -1,0 +1,20 @@
+// центрування flex-елементів
+@mixin centeredFlex($type) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+
+// створення списку посилань на соціальні мережі
+// $color: 'red', 'green', 'black';
+
+// @mixin generateIcons($iconlist) {
+//   @each $iconName in $iconlist {
+//     .icon-#{$iconName} {
+//       background-color: #{$iconName};
+//     }
+//   }
+// }
+
+// визов посилань
+// @include generateIcons($color);
