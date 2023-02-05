@@ -1,0 +1,168 @@
+// позиціонування footer
+.footer {
+  background-color: $footer-background;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    column-gap: 85px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (max-width: 370px) {
+      column-gap: 0;
+    }
+
+    @media screen and (min-width: 1024px) {
+      column-gap: 163px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      column-gap: 231px;
+    }
+  }
+}
+
+// стилізація логотипу
+.footer__logo {
+  @extend %link;
+
+  margin-left: auto;
+
+  font-family: $font-logo;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: $fonts-color-f3c653;
+
+  transition: color var(--transition-fast);
+
+  @media screen and (max-width: 370px) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    line-height: calc(64 / 69);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $fonts-color-c79002;
+  }
+}
+
+// позиціонування обгортки навігаціних блоків
+.footer__wrapper-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin-right: auto;
+
+  @media screen and (max-width: 370px) {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: 137px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    column-gap: 199px;
+  }
+}
+
+// стилізація навігаційного блоку
+.footer__nav-item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .footer__nav-link {
+    @extend %link;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+    color: $fonts-color-f3c653;
+
+    transition: $transition-fast;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $fonts-color-c79002;
+    }
+  }
+}
+
+// позиціонування блоку посилань на соціальні мережі
+.footer__social-list {
+  display: flex;
+  column-gap: 20px;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: column-reverse;
+    row-gap: 12px;
+  }
+}
+
+// стилі та позиціонування іконок
+.footer__social-link {
+  @extend %link;
+
+  color: $fonts-color-f3c653;
+  border: 0.5px solid $color-text-btn;
+  border-radius: 2px;
+
+  transition: color $transition-fast, border-color $transition-fast;
+
+  @media screen and (max-width: 1023px) {
+    border: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 143px;
+    padding: 10px 12px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $fonts-color-c79002;
+    border-color: $fonts-color-c79002;
+  }
+
+  .social-icon {
+    transition: fill $transition-fast;
+  }
+
+  &:hover .social-icon,
+  &:focus .social-icon,
+  &:active .social-icon {
+    fill: $fonts-color-c79002;
+  }
+}
+
+// стилізація назв соціальних мереж
+.footer__link-name {
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}
