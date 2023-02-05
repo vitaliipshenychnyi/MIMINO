@@ -1,7 +1,13 @@
-// підключення базових стилів, шрифтів та змінних
-@import './basic';
-@import './fonts';
-@import './variables';
+// підключення базових стилів, шрифтів, змінних та нормолайзеру
+@import './base/variables';
+@import './base/placeholders';
+@import './base/mixins';
+@import './base/normolize';
+@import './base/fonts';
+@import './base/basic';
 
-// підключення стилів секцій
-@import './header';
+// підключення загальних стилів
+@import './components/container';
+
+// підключення header, footer
+@import './layout/header';
