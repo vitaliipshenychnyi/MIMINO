@@ -1,0 +1,292 @@
+// фонове зображення
+.hero-homepage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/hero/homepage/hero-homepage-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--home-hero-background);
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 414px),
+    screen and (min-resolution: 192dpi) and (max-width: 414px),
+    screen and (min-resolution: 2dppx) and (max-width: 414px) {
+    .hero-homepage {
+      background-image: linear-gradient(
+          $home-hero-background,
+          $home-hero-background
+        ),
+        url(../images/hero/homepage/hero-homepage-mobile@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .hero-homepage {
+      background-image: linear-gradient(
+          $home-hero-background,
+          $home-hero-background
+        ),
+        url(../images/hero/homepage/hero-homepage-tablet.jpg);
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+    screen and (min-resolution: 192dpi) and (min-width: 1024px),
+    screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+    .hero-homepage {
+      background-image: linear-gradient(
+          $home-hero-background,
+          $home-hero-background
+        ),
+        url(../images/hero/homepage/hero-homepage-tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .hero-homepage {
+      background-image: linear-gradient(
+          $home-hero-background,
+          $home-hero-background
+        ),
+        url(../images/hero/homepage/hero-homepage-desktop.jpg);
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    .hero-homepage {
+      background-image: linear-gradient(
+          $home-hero-background,
+          $home-hero-background
+        ),
+        url(../images/hero/homepage/hero-homepage-desktop@2x.jpg);
+    }
+  }
+}
+
+// додаткові налаштування контейнеру
+.hero-container {
+  position: relative;
+  padding-top: 181px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 188px;
+    padding-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 164px;
+    padding-bottom: 64px;
+  }
+}
+
+// позиціонування текстового контенту
+.hero__wrapper-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 113px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 137px;
+  }
+}
+
+// стилізація текстового контенту
+.hero__title {
+  margin-bottom: 24px;
+
+  font-family: $font-logo;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: calc(103 / 96);
+  letter-spacing: 0.3em;
+  color: $fonts-color-ffffff;
+
+  // виправлення багу шрифта
+  margin-left: calc(96 * 0.3);
+
+  @media screen and (max-width: 370px) {
+    font-size: 84px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 16px;
+
+    font-size: 128px;
+    line-height: calc(138 / 128);
+
+    // виправлення багу шрифта
+    margin-left: calc(128 * 0.3);
+  }
+}
+
+.hero__subtitle {
+  margin-bottom: 40px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: $fonts-color-ffffff;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 56px;
+
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 64px;
+  }
+}
+
+.hero__slogan {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(37 / 32);
+  letter-spacing: 0.05em;
+  color: $fonts-color-ffffff;
+
+  @media screen and (max-width: 370px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 36px;
+    line-height: calc(41 / 36);
+  }
+}
+
+// позиціонування обгортки адреси-посилання та списку кнопок бронювання
+.hero__wrapper-BtnAdress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 58px;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+  }
+}
+
+// позиціонування та стилізація адреси-посилання
+.hero__address-link {
+  @extend %link;
+
+  display: flex;
+  align-items: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 6px;
+  padding-right: 6px;
+
+  border: 1px solid $color-border;
+  border-radius: 2px;
+
+  transition: border-radius $transition-fast, border-color $transition-fast,
+    background-color $transition-fast;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-radius: 50px;
+    border-color: $fonts-color-ffffff;
+    background-color: $color-btn;
+  }
+
+  @media screen and (max-width: 370px) {
+    position: absolute;
+    top: 94px;
+    right: 21px;
+  }
+
+  @media screen and (min-width: 371px) and (max-width: 1023px) {
+    position: absolute;
+    top: 74px;
+    right: 15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 16px;
+  }
+
+  & .location-icon {
+    margin-right: 8px;
+
+    width: 20px;
+    height: 20px;
+    fill: $color-text-btn;
+
+    @media screen and (min-width: 1024px) {
+      .location-icon {
+        margin-right: 10px;
+
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  & address {
+    font-size: 12px;
+    font-style: normal;
+    line-height: calc(15 / 12);
+    letter-spacing: 0.01em;
+    color: $fonts-color-e5e5e5;
+
+    transition: color $transition-fast;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      line-height: calc(20 / 16);
+    }
+  }
+
+  &:hover address,
+  &:focus address,
+  &:active address {
+    color: $fonts-color-f3c653;
+  }
+}
+
+// позиціонування кнопок бронювання
+.hero__btn-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: auto;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 60px;
+  }
+}
+
+// позиціонування списку посилань на соціальні мережі
+.hero__social-list {
+  display: flex;
+  gap: 20px;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
