@@ -1,0 +1,101 @@
+// базове оформлення кнопок ЗАБРОНЮВАТИ, ПЕРЕГЛЯНУТИ, ДЕТАЛЬНІШЕ та кнопки Забронювати столик, Забронювати номер
+.btn {
+  padding: 14px 24px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $color-text-btn;
+
+  background-color: $color-btn;
+  border: 2px solid $fonts-color-ffffff;
+  border-radius: 25px;
+
+  cursor: pointer;
+
+  transition: background-color $transition-fast, border-color $transition-fast;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $fonts-color-ffffff;
+    border-color: $color-text-btn;
+  }
+}
+
+// кнопка з чорним фоном
+.btn-black {
+  background-color: $footer-background;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $fonts-color-ffffff;
+    border-color: $color-text-btn;
+  }
+}
+
+// оформлення кнопки ПЕРЕГЛЯНУТИ МЕНЮ
+.btn-look-menu {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+// оформлення кнопки ПЕРЕГЛЯНУТИ ЦІНУ
+.btn-look-price {
+  padding-left: 37px;
+  padding-right: 37px;
+}
+
+// оформлення кнопки ДЕТАЛЬНІШЕ
+.btn-details {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+// кнопка бронювання
+.btn-booking {
+  padding: 20px 41px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $fonts-color-ffffff;
+
+  background-color: $footer-background;
+  border: 1px solid $color-text-btn;
+  border-radius: 25px;
+  cursor: pointer;
+
+  transition: background-color $transition-fast, border-color $transition-fast;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $footer-background;
+    background-color: $color-text-btn;
+  }
+
+  @media screen and (min-width: 414px) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 18px 38px;
+    font-size: 24px;
+  }
+}
+
+// кнопка бронювання квадратна для модалки .btn-booking +
+.btn-modal {
+  border-radius: 2px;
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 117px;
+    padding-right: 117px;
+  }
+}
