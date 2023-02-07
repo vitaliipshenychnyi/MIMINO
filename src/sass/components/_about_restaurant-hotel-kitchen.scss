@@ -99,6 +99,33 @@
       max-width: 518px;
     }
   }
+
+  // для секції about-hotel
+  &__subtitle.hotel {
+    text-align: end;
+  }
+
+  &__name.hotel {
+    text-align: end;
+    margin-right: calc(-40 * 0.3); //виправлення багу шрифта
+
+    @media screen and (min-width: 1024px) {
+      margin-right: calc(-64 * 0.3); //виправлення багу шрифта
+    }
+  }
+
+  &__description.hotel {
+    margin-left: auto;
+    max-width: 242px;
+
+    @media screen and (min-width: 1024px) {
+      max-width: 419px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 489px;
+    }
+  }
 }
 
 .interior-main {
@@ -125,6 +152,23 @@
   @media screen and (min-width: 1280px) {
     right: 180px;
   }
+
+  // для секції about-hotel
+  &.hotel img {
+    @media screen and (max-width: 1023px) {
+      margin-left: 0;
+    }
+  }
+
+  &.hotel {
+    @media screen and (min-width: 1024px) {
+      left: 112px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 180px;
+    }
+  }
 }
 
 // стилізація контенту другорядного блоку
@@ -138,6 +182,11 @@
 
   @media screen and (min-width: 1280px) {
     column-gap: 32px;
+  }
+
+  // для секції about-hotel
+  &.hotel {
+    justify-content: flex-end;
   }
 }
 
