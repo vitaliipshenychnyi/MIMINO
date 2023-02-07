@@ -1,5 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-.hero__address-link, .footer__social-link, .footer__nav-item .footer__nav-link, .footer__logo, .header__phone, .header__nav-link, .header__logo {
+.hero__address-link, .footer__social-link, .footer__nav-item .footer__nav-link, .footer__logo, .header__phone, .header__nav-link, .header__logo, .btn-look-menu {
   text-decoration: none;
 }
 
@@ -527,20 +527,20 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--home-hero-background);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 414px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 414px), screen and (min-resolution: 192dpi) and (max-width: 414px), screen and (min-resolution: 2dppx) and (max-width: 414px) {
-  .hero-homepage .hero-homepage {
+  .hero-homepage {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero/homepage/hero-homepage-mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 1024px) {
-  .hero-homepage .hero-homepage {
+  .hero-homepage {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero/homepage/hero-homepage-tablet.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), screen and (min-resolution: 192dpi) and (min-width: 1024px), screen and (min-resolution: 2dppx) and (min-width: 1024px) {
-  .hero-homepage .hero-homepage {
+  .hero-homepage {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/hero/homepage/hero-homepage-tablet@2x.jpg);
   }
 }

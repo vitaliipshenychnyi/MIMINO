@@ -1,7 +1,7 @@
 // фонове зображення
-.hero-homepage {
+.hero-hotel {
   background-image: linear-gradient($hero-background, $hero-background),
-    url(../images/hero/homepage/hero-homepage-mobile.jpg);
+    url(../images/hero/hotel/hero-hotel-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11,30 +11,49 @@
     screen and (min-resolution: 192dpi) and (max-width: 414px),
     screen and (min-resolution: 2dppx) and (max-width: 414px) {
     background-image: linear-gradient($hero-background, $hero-background),
-      url(../images/hero/homepage/hero-homepage-mobile@2x.jpg);
+      url(../images/hero/hotel/hero-hotel-mobile@2x.jpg);
   }
 
   @media screen and (min-width: 1024px) {
     background-image: linear-gradient($hero-background, $hero-background),
-      url(../images/hero/homepage/hero-homepage-tablet.jpg);
+      url(../images/hero/hotel/hero-hotel-tablet.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
     screen and (min-resolution: 192dpi) and (min-width: 1024px),
     screen and (min-resolution: 2dppx) and (min-width: 1024px) {
     background-image: linear-gradient($hero-background, $hero-background),
-      url(../images/hero/homepage/hero-homepage-tablet@2x.jpg);
+      url(../images/hero/hotel/hero-hotel-tablet@2x.jpg);
   }
 
   @media screen and (min-width: 1280px) {
     background-image: linear-gradient($hero-background, $hero-background),
-      url(../images/hero/homepage/hero-homepage-desktop.jpg);
+      url(../images/hero/hotel/hero-hotel-desktop.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
     screen and (min-resolution: 192dpi) and (min-width: 1280px),
     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     background-image: linear-gradient($hero-background, $hero-background),
-      url(../images/hero/homepage/hero-homepage-desktop@2x.jpg);
+      url(../images/hero/hotel/hero-hotel-desktop@2x.jpg);
   }
+}
+
+// позиціонування текстового контенту
+.hero__wrapper-text {
+  &.hotel {
+    margin-bottom: 178px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 218px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 242px;
+    }
+  }
+}
+
+.hero__subtitle.hotel {
+  margin-bottom: 0;
 }

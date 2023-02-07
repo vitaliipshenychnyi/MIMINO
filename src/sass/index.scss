@@ -10,6 +10,7 @@
 @import './components/container';
 @import './components/social-icon';
 @import './components/buttons';
+@import './components/hero';
 
 // підключення header, footer
 @import './layout/header';
@@ -17,3 +18,9 @@
 
 // підключення стилів Homepage
 @import './homepage/hero-main';
+
+// підключення стилів Restaurant
+@import './restaurant/hero-restaurant';
+
+// підключення стилів Hotel
+@import './hotel/hero-hotel';

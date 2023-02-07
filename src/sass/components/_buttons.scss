@@ -39,6 +39,8 @@
 
 // оформлення кнопки ПЕРЕГЛЯНУТИ МЕНЮ
 .btn-look-menu {
+  @extend %link;
+
   padding-left: 32px;
   padding-right: 32px;
 }
