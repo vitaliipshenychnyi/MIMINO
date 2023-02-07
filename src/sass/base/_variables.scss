@@ -6,13 +6,14 @@ $font-logo: 'FilmP3', sans-serif;
 // фонові кольори
 $main-background: #fffdee;
 $footer-background: #0e0c07;
+$picture-background:#DADADA;
 // $secondary-background: #f0ecd6;
 // $header-background: rgba(0, 0, 0, 0.65);
 
 // Кольри для компонентів кнопок
 $color-btn: rgba(0, 0, 0, 0.4);
 $color-text-btn: #f3c653;
-$color-border:rgba(243, 198, 83, 0.7);
+$color-border: rgba(243, 198, 83, 0.7);
 
 // кубік та таймінг для анімації
 $transition-slow: 750ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -23,11 +24,13 @@ $fonts-color-ffffff: #ffffff;
 $fonts-color-c79002: #c79002;
 $fonts-color-f3c653: #f3c653;
 $fonts-color-e5e5e5: #e5e5e5;
-// $accent-text-color: #5f5f5f;
-// $title-text-color: #494848;
+$fonts-color-b4b4b4: #b4b4b4;
+$fonts-color-494848: #494848;
+$fonts-color-5f5f5f: #5f5f5f;
 // $text-color-gray: #808080;
 
-  // напівпрозорі фони для секцій
-  $hero-background: rgba(0, 0, 0, 0.65);
-  $restaurant-background: rgba(0, 0, 0, 0.76);
-  $hotel-background: rgba(0, 0, 0, 0.7);
+// напівпрозорі фони для секцій
+$hero-background: rgba(0, 0, 0, 0.65);
+$restaurant-background: rgba(0, 0, 0, 0.76);
+$hotel-background: rgba(0, 0, 0, 0.7);
+
