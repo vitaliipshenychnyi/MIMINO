@@ -170,7 +170,7 @@
 // });
 
 // функціонал слайдеру секції detail-restaurant
-var swiper = new Swiper('.slider_det-rest', {
+var swiper = new Swiper('.slider__details', {
   slidesPerView: 2,
   spaceBetween: 20,
   slidesPerGroup: 1,
@@ -184,8 +184,8 @@ var swiper = new Swiper('.slider_det-rest', {
   },
   speed: 800,
   navigation: {
-    nextEl: '.swiper-button-next_det-rest',
-    prevEl: '.swiper-button-prev_det-rest',
+    nextEl: '.details-restaurant__next',
+    prevEl: '.details-restaurant__prev',
   },
   breakpoints: {
     1024: {
@@ -200,7 +200,7 @@ var swiper = new Swiper('.slider_det-rest', {
 });
 
 // функціонал слайдеру секції detail-hotel
-var swiper = new Swiper('.slider_det-hotel', {
+var swiper = new Swiper('.slider__details', {
   slidesPerView: 2,
   spaceBetween: 20,
   slidesPerGroup: 1,
@@ -214,8 +214,8 @@ var swiper = new Swiper('.slider_det-hotel', {
   },
   speed: 800,
   navigation: {
-    nextEl: '.swiper-button-next_det-hotel',
-    prevEl: '.swiper-button-prev_det-hotel',
+    nextEl: '.details-hotel__next',
+    prevEl: '.details-hotel__prev',
   },
   breakpoints: {
     1024: {

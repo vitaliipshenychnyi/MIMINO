@@ -40,7 +40,7 @@
 // оформлення кнопки ПЕРЕГЛЯНУТИ МЕНЮ
 .btn-look-menu {
   @extend %link;
-
+  display: block;
   padding-left: 32px;
   padding-right: 32px;
 }
