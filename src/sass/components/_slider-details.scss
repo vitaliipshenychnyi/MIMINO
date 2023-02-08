@@ -1,3 +1,8 @@
+.details-restaurant__container,
+.details-hotel__container {
+  overflow: hidden;
+}
+
 // стилізація обгортки блоків тексту та слайдеру
 .details__wrapper {
   display: flex;
