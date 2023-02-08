@@ -21,9 +21,10 @@
 // підключення стилів Homepage
 @import './homepage/hero-main';
 @import './homepage/about-restaurant';
-@import './restaurant/details-restaurant';
-@import './hotel/about-hotel';
-@import './hotel/details-hotel';
+@import './homepage/details-restaurant';
+@import './homepage/about-hotel';
+@import './homepage/details-hotel';
+@import './homepage/contacts';
 
 // підключення стилів Restaurant
 @import './restaurant/hero-restaurant';
