@@ -23,6 +23,14 @@
   &.hotel {
     margin-left: 0;
     margin-right: 105px;
+
+    @media screen and (max-width: 413px) {
+      margin-right: auto;
+    }
+  }
+
+  @media screen and (max-width: 413px) {
+    margin-left: auto;
   }
 
   @media screen and (min-width: 1024px) {

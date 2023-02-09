@@ -16,7 +16,6 @@
 .about__container {
   position: relative;
   padding-bottom: 329px;
-  
 
   @media screen and (max-width: 1023px) {
     overflow: hidden;
@@ -183,6 +182,10 @@
   display: flex;
   column-gap: 20px;
 
+  @media screen and (max-width: 413px) {
+    flex-direction: column;
+  }
+
   @media screen and (min-width: 1024px) {
     column-gap: 48px;
   }
@@ -207,6 +210,12 @@
       box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
     }
   }
+
+  &.hotel {
+    img {
+      margin-left: auto;
+    }
+  }
 }
 
 .secondary__description {
@@ -220,6 +229,12 @@
   letter-spacing: 0.02em;
   color: $fonts-color-c79002;
 
+  @media screen and (max-width: 413px) {
+    margin-top: 32px;
+    margin-left: 50px;
+    max-width: 258px;
+  }
+
   @media screen and (min-width: 1024px) {
     max-width: 312px;
     margin-top: 196px;
@@ -230,5 +245,14 @@
 
   @media screen and (min-width: 1280px) {
     margin-top: 186px;
+  }
+
+  &.hotel {
+    @media screen and (max-width: 413px) {
+      margin-top: 0;
+      margin-bottom: 32px;
+      margin-left: 0;
+      max-width: 258px;
+    }
   }
 }

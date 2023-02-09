@@ -61,6 +61,11 @@
   letter-spacing: 0.02em;
   color: $fonts-color-ffffff;
 
+  @media screen and (max-width: 413px) {
+text-align: center;
+
+  }
+
   @media screen and (min-width: 1024px) {
     margin-bottom: 56px;
 
