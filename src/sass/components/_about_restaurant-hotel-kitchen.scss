@@ -15,13 +15,20 @@
 // додаткові налаштування контейнеру
 .about__container {
   position: relative;
+  padding-bottom: 329px;
+  
 
   @media screen and (max-width: 1023px) {
     overflow: hidden;
   }
 
-  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  @media screen and (min-width: 1024px) {
     padding-right: 60px;
+    padding-bottom: 230px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 175px;
   }
 }
 
