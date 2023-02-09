@@ -1,77 +1,77 @@
 // функціонал слайдеру секції about-restaurant
-// var swiper = new Swiper('.js-swiper_about-restaurant', {
-//   slidesPerView: 2,
-//   spaceBetween: 25,
-//   slidesPerGroup: 1,
-//   loop: true,
-//   loopedSlides: 2,
-//   loopFillGroupWithBlank: true,
-//   grabCursor: true,
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: true,
-//   },
-//   speed: 800,
-//   navigation: {
-//     nextEl: '.js-swiper-button-next',
-//     prevEl: '.js-swiper-button-prev',
-//   },
-//   breakpoints: {
-//     1024: {
-//       spaceBetween: 40,
-//     },
-//   },
-// });
+var swiper = new Swiper('.slider__about', {
+  slidesPerView: 2,
+  spaceBetween: 25,
+  slidesPerGroup: 1,
+  loop: true,
+  loopedSlides: 2,
+  loopFillGroupWithBlank: true,
+  grabCursor: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  speed: 800,
+  navigation: {
+    nextEl: '.about__next.restaurant',
+    prevEl: '.about__prev.restaurant',
+  },
+  breakpoints: {
+    1024: {
+      spaceBetween: 40,
+    },
+  },
+});
 
 // функціонал слайдеру секції about-hotel
-// var swiper = new Swiper('.js-swiper_about-hotel', {
-//   slidesPerView: 2,
-//   spaceBetween: 25,
-//   slidesPerGroup: 1,
-//   loop: true,
-//   loopedSlides: 2,
-//   loopFillGroupWithBlank: true,
-//   grabCursor: true,
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: true,
-//   },
-//   speed: 800,
-//   navigation: {
-//     nextEl: '.js-swiper2-button-next',
-//     prevEl: '.js-swiper2-button-prev',
-//   },
-//   breakpoints: {
-//     1024: {
-//       spaceBetween: 40,
-//     },
-//   },
-// });
+var swiper = new Swiper('.slider__about', {
+  slidesPerView: 2,
+  spaceBetween: 25,
+  slidesPerGroup: 1,
+  loop: true,
+  loopedSlides: 2,
+  loopFillGroupWithBlank: true,
+  grabCursor: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  speed: 800,
+  navigation: {
+    nextEl: '.about__next.hotel',
+    prevEl: '.about__prev.hotel',
+  },
+  breakpoints: {
+    1024: {
+      spaceBetween: 40,
+    },
+  },
+});
 
 // функціонал слайдеру секції about-kitchent сторінки RESTAURANT
-// var swiper = new Swiper('.js-swiper_about-kitchen', {
-//   slidesPerView: 2,
-//   spaceBetween: 25,
-//   slidesPerGroup: 1,
-//   loop: true,
-//   loopedSlides: 2,
-//   loopFillGroupWithBlank: true,
-//   grabCursor: true,
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: true,
-//   },
-//   speed: 800,
-//   navigation: {
-//     nextEl: '.js-swiper3-button-next',
-//     prevEl: '.js-swiper3-button-prev',
-//   },
-//   breakpoints: {
-//     1024: {
-//       spaceBetween: 40,
-//     },
-//   },
-// });
+var swiper = new Swiper('.slider__about', {
+  slidesPerView: 2,
+  spaceBetween: 25,
+  slidesPerGroup: 1,
+  loop: true,
+  loopedSlides: 2,
+  loopFillGroupWithBlank: true,
+  grabCursor: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  speed: 800,
+  navigation: {
+    nextEl: '.about__next.kitchen',
+    prevEl: '.about__prev.kitchen',
+  },
+  breakpoints: {
+    1024: {
+      spaceBetween: 40,
+    },
+  },
+});
 
 // функціонал слайдеру секції room-lux сторінки HOTEL
 // var swiper = new Swiper('.js-swiper_room-lux', {
@@ -184,8 +184,8 @@ var swiper = new Swiper('.slider__details', {
   },
   speed: 800,
   navigation: {
-    nextEl: '.details-restaurant__next',
-    prevEl: '.details-restaurant__prev',
+    nextEl: '.details__next.restaurant',
+    prevEl: '.details__prev.restaurant',
   },
   breakpoints: {
     1024: {
@@ -214,8 +214,8 @@ var swiper = new Swiper('.slider__details', {
   },
   speed: 800,
   navigation: {
-    nextEl: '.details-hotel__next',
-    prevEl: '.details-hotel__prev',
+    nextEl: '.details__next.hotel',
+    prevEl: '.details__prev.hotel',
   },
   breakpoints: {
     1024: {

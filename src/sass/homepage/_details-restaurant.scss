@@ -86,34 +86,3 @@
     bottom: 94px;
   }
 }
-
-// стилізація кнопок слайдера
-.swiper-btn__details-restaurant {
-  display: flex;
-  gap: 32px;
-  justify-content: flex-start;
-
-  .details-restaurant__next,
-  .details-restaurant__prev {
-    padding: 0;
-
-    fill: $fonts-color-ffffff;
-    line-height: 0;
-    background-color: transparent;
-    border: none;
-    outline: none;
-
-    transition: fill $transition-fast;
-
-    cursor: pointer;
-  }
-
-  .details-restaurant__next:hover,
-  .details-restaurant__next:focus,
-  .details-restaurant__next:active,
-  .details-restaurant__prev:hover,
-  .details-restaurant__prev:focus,
-  .details-restaurant__prev:active {
-    fill: $color-text-btn;
-  }
-}

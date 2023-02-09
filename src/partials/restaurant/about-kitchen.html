@@ -74,5 +74,86 @@
         veniam consequat sunt nostrud amet.
       </p>
     </div>
+
+    <!-- СЛАЙДЕР -->
+    <!-- загальний контейнер слайдеру та кнопок керування -->
+    <div class="slider-wrapper__about">
+      <!-- обгортка слайдеру -->
+      <div class="swiper slider__about">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/about-kitchen/slider/picture-desktop-1.jpg    1x,
+                  ./images/about-kitchen/slider/picture-desktop-1@2x.jpg 2x
+                "
+                type="image/jpeg"
+              />
+
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./images/about-kitchen/slider/picture-tablet-1.jpg    1x,
+                  ./images/about-kitchen/slider/picture-tablet-1@2x.jpg 2x
+                "
+                type="image/jpeg"
+              />
+
+              <img
+                srcset="
+                  ./images/about-kitchen/slider/picture-mobile-1@2x.jpg 2x
+                "
+                src="./images/about-kitchen/slider/picture-mobile-1.jpg"
+                alt="cooking process"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/about-kitchen/slider/picture-desktop-2.jpg    1x,
+                  ./images/about-kitchen/slider/picture-desktop-2@2x.jpg 2x
+                "
+                type="image/jpeg"
+              />
+
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./images/about-kitchen/slider/picture-tablet-2.jpg    1x,
+                  ./images/about-kitchen/slider/picture-tablet-2@2x.jpg 2x
+                "
+                type="image/jpeg"
+              />
+
+              <img
+                srcset="
+                  ./images/about-kitchen/slider/picture-mobile-2@2x.jpg 2x
+                "
+                src="./images/about-kitchen/slider/picture-mobile-2.jpg"
+                alt="khinkali"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <!-- кнопки слайдера -->
+      <div class="swiper-btn__about">
+        <button class="about__prev kitchen" type="button">
+          <svg width="32" height="32">
+            <use href="./images/icons.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <button class="about__next kitchen" type="button">
+          <svg width="32" height="32">
+            <use href="./images/icons.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
 </section>

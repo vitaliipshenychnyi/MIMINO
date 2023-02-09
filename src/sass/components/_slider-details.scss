@@ -1,89 +1,3 @@
-.details-restaurant__container,
-.details-hotel__container {
-  overflow: hidden;
-}
-
-// стилізація обгортки блоків тексту та слайдеру
-.details__wrapper {
-  display: flex;
-  flex-direction: column;
-
-  &.hotel {
-    text-align: end;
-    align-items: flex-end;
-  }
-}
-
-// стилізація текстового контенту
-.details__wrapper-text {
-  display: flex;
-  flex-direction: column;
-  margin-left: 125px;
-
-  &.hotel {
-    margin-left: 0;
-    margin-right: 105px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    margin-left: 231px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-left: 253px;
-  }
-}
-
-.details__logo {
-  margin-bottom: 12px;
-
-  font-family: $font-logo;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: calc(43 / 40);
-  letter-spacing: 0.3em;
-  color: $fonts-color-ffffff;
-
-  &.hotel {
-    //виправлення багу шрифта
-    margin-right: calc(-40 * 0.3);
-  }
-
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 16px;
-
-    font-size: 64px;
-    line-height: calc(69 / 64);
-
-    &.hotel {
-      //виправлення багу шрифта
-      margin-right: calc(-64 * 0.3);
-    }
-  }
-}
-
-.details__title {
-  margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-  letter-spacing: 0.02em;
-  color: $fonts-color-ffffff;
-
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 8px;
-
-    font-size: 24px;
-    line-height: calc(29 / 24);
-  }
-}
-
-// позиціонування списку модальних кнопок
-.btn-item:first-child {
-  margin-bottom: 16px;
-}
-
 // загальний контейнер слайдеру та кнопок керування
 .slider-wrapper__details {
   margin-bottom: 32px;
@@ -95,8 +9,7 @@
   overflow: hidden;
 
   &.hotel {
-    // перемикач кнопок керування з ліва на право
-    align-items: flex-end;
+    align-items: flex-end; // перемикач кнопок керування з ліва на право
   }
 
   @media screen and (min-width: 1024px) {
@@ -127,5 +40,49 @@
 
   @media screen and (min-width: 1280px) {
     width: 984px;
+  }
+}
+
+// зміщення фокусу зображень слайдеру в лівий край
+.swiper-wrapper.details-hotel {
+  margin-left: 100px;
+
+  @media screen and(min-width: 1024px) {
+    margin-left: 88px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    margin-left: 228px;
+  }
+}
+
+// стилізація кнопок слайдера
+.swiper-btn__details {
+  display: flex;
+  gap: 32px;
+  justify-content: flex-start;
+
+  .details__next,
+  .details__prev {
+    padding: 0;
+
+    fill: $fonts-color-ffffff;
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    transition: fill $transition-fast;
+
+    cursor: pointer;
+  }
+
+  .details__next:hover,
+  .details__next:focus,
+  .details__next:active,
+  .details__prev:hover,
+  .details__prev:focus,
+  .details__prev:active {
+    fill: $color-text-btn;
   }
 }

@@ -95,34 +95,3 @@
     bottom: 94px;
   }
 }
-
-// стилізація кнопок слайдера
-.swiper-btn__details-hotel {
-  display: flex;
-  gap: 32px;
-  justify-content: flex-start;
-
-  .details-hotel__next,
-  .details-hotel__prev {
-    padding: 0;
-
-    fill: $fonts-color-ffffff;
-    line-height: 0;
-    background-color: transparent;
-    border: none;
-    outline: none;
-
-    transition: fill $transition-fast;
-
-    cursor: pointer;
-  }
-
-  .details-hotel__next:hover,
-  .details-hotel__next:focus,
-  .details-hotel__next:active,
-  .details-hotel__prev:hover,
-  .details-hotel__prev:focus,
-  .details-hotel__prev:active {
-    fill: $color-text-btn;
-  }
-}
