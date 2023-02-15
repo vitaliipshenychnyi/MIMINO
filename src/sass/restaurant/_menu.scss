@@ -1,0 +1,211 @@
+.menu {
+  background-color: $menu-background;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 60px;
+  }
+}
+
+.menu__title {
+  margin-bottom: 32px;
+
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(37 / 32);
+  color: #000000;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 40px;
+  }
+}
+
+.menu__main-wrapper {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menu__caption {
+  margin-bottom: 16px;
+
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: #000000;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+}
+
+// обгортка лівої колонки меню
+.menu__left-colomn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    gap: 20px;
+  }
+}
+
+// обгортка правої колонки меню
+.menu__right-colomn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: 1024px) {
+    gap: 20px;
+  }
+}
+
+// стилізація списку страв
+.dishes__list {
+  max-width: 100%;
+
+  @media screen and (min-width: 1024px) {
+    width: 430px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 485px;
+  }
+}
+
+.dishes__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// стилізація назви страви та інгридієнтів
+.name-dishes__wrapper {
+  max-width: 220px;
+
+  @media screen and (max-width: 385px) {
+    max-width: 170px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 230px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 300px;
+  }
+
+  .ingridients {
+    font-size: 10px;
+    line-height: calc(12 / 10);
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+}
+
+.name-dishes {
+  margin-bottom: 4px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.02em;
+  color: #000000;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+}
+
+// стилізація ваги страви та ціни
+.weight-price__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @media screen and (max-width: 385px) {
+    gap: 12px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    gap: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 60px;
+  }
+
+  .weight {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+
+  .price {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    letter-spacing: 0.02em;
+    color: #000000;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: calc(20 / 16);
+    }
+  }
+}
+
+.button-menu {
+  margin-left: 74px;
+  margin-top: 32px;
+  display: block;
+
+  color: $color-text-btn;
+  width: 236px;
+  height: 48px;
+  background: #000000;
+  border: 2px solid $main-background;
+  border-radius: 25px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: auto;
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 32px;
+  }
+}
